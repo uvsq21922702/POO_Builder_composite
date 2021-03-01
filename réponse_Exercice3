@@ -1,0 +1,28 @@
+1-SRP
+1/ la class employe ne respecte pas SRP car on trouve deux responsabilités dans la classe.
+
+2/si la methode calcul_salaire change implique directement un changement dans affiche_coordonée().
+
+3/fichier csv ?? c’est un fichier en exel ou les données sont stockés mais ca sert à quoi cette question plus exactement !!
+
+4/La solution.(code source à voir).
+
+2-OCP doit en vrai respecter le polymorphisme.
+*Chaque classe doit avoir une methode pour faire une chose.
+*Les attributs doivent être privés.
+*pas de variables globales.
+*exemple:
+==> une classe shape
+==> une classe cercle à part extend shape et puis la définition des méthodes.
+==> utiliser une méthode computer_area().
+==> et donc le polymorphisme à chaque fois.
+
+1/ sur eclipse//
+
+
+
+3-LSP
+Exemple d’un carrée et de rectangle, un carrée est comme un rectangle mais le comportement change d’un carrée à un rectangle.
+Dans la classe fille, est-ce que toutes les redéfinitions de méthodes sont justifiées et pertinentes ?
+L'implémentation d'une méthode redéfinie risque-t-elle de poser problème, et de générer le lancement d'une exception ? Si tel est le cas, c'est ennuyeux. 
+L'implémentation d'une méthode redéfinie conduit-elle à ignorer l'appel et à ne rien faire ? Généralement, ce n'est pas bon signe, mais cela peut se justifier. Soyez attentif et voyez si c'est le cas pour une seule méthode (OK !) ou pour plusieurs méthodes (KO !).
