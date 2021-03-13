@@ -22,7 +22,6 @@
 
 
 3-LSP
-Exemple d’un carrée et de rectangle, un carrée est comme un rectangle mais le comportement change d’un carrée à un rectangle.
-Dans la classe fille, est-ce que toutes les redéfinitions de méthodes sont justifiées et pertinentes ?
-L'implémentation d'une méthode redéfinie risque-t-elle de poser problème, et de générer le lancement d'une exception ? Si tel est le cas, c'est ennuyeux. 
-L'implémentation d'une méthode redéfinie conduit-elle à ignorer l'appel et à ne rien faire ? Généralement, ce n'est pas bon signe, mais cela peut se justifier. Soyez attentif et voyez si c'est le cas pour une seule méthode (OK !) ou pour plusieurs méthodes (KO !).
+Cette solution ne respecte pas LSP car quand on appelle la méthode avance sur tous les types de Robots, on ne peut pas substituer un Robot par un RobotStatique car celui-ci renvoie une UnsupportedOperationException.
+
+
