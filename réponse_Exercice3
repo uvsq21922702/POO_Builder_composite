@@ -29,3 +29,5 @@ Cette solution ne respecte pas LSP car quand on appelle la méthode avance sur t
 Donc la solution est de décomposer cette interface en des petits isp simples.
 
 *Cela forcera à modifier la signature dans SimplePrinter alors qu'il ne l'implémente même pas.
+
+5-Cette classe ne respecte pas DIP car elle ne dépend d'un affichage (Sys.out.print) alors qu'on se trouve dans un haut niveau d'abstraction. On doit remplacer le Sys.out.print par une méthode généraliste de Logger.
