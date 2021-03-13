@@ -4,8 +4,14 @@ public class Robot {
 
 	private Position position;
 	private Direction direction;
-	
-	public void tourne() {}
-	public void avance() {}
+
+Robot(Position positionn,String directionn)
+    {
+        position= new Position(positionn.getX(),positionn.getY());
+        direction= new Direction(directionn);
+    }
+
+    public Position getPOS(){return this.position;}
+    public Direction getDIR(){return this.direction;}
 	
 }
