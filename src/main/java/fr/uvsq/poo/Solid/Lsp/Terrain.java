@@ -1,4 +1,4 @@
-package fr.uvsq.poo.Lsp
+package fr.uvsq.poo.Solid.Lsp
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package fr.uvsq.poo.Lsp;
+package fr.uvsq.poo.Solid.Lsp;
 
 public class RobotStatique extends Robot{
 

@@ -1,4 +1,4 @@
-package fr.uvsq.poo.Ocp;
+package fr.uvsq.poo.Solid.Ocp;
 
 public class Vendeur extends Employee {
 	private double commission;

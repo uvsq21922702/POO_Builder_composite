@@ -1,4 +1,4 @@
-package fr.uvsq.poo.Lsp;
+package fr.uvsq.poo.Solid.Lsp;
 public class RobotMobile extends RobotStatique {
 
     public void setPOS(int x, int y){this.getPOS().setX(x); this.getPOS().setY(y);}

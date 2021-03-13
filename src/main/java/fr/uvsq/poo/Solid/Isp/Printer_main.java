@@ -1,4 +1,4 @@
-package fr.uvsq.poo.isp;
+package fr.uvsq.poo.Solid.isp;
 
 public class Printer_main implements Printer, Copie, Faxe, Scanner {
 

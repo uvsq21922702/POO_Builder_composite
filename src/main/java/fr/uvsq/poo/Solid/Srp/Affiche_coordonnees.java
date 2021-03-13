@@ -1,4 +1,4 @@
-package fr.uvsq.poo.srp;
+package fr.uvsq.poo.Solid.srp;
 
 public class Affiche_Coordonnees {
 
