@@ -1,25 +1,28 @@
 package fr.uvsq.poo.Solid.Ocp;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Entreprise {
-private List<Employe> salarieList;
+private List<Employee> salarieList;
 private List<Vendeur> vendeurList;
 	
 	public Entreprise() {
-		salarieList = new ArrayList<Employe>();
-		vendeurList = new ArrayList<Employe>();
+		salarieList = new ArrayList<Employee>();
+		vendeurList = new ArrayList<Vendeur>();
 
 	}
 	
 	
 	public double getSommeTotaleSalaires() {
 		double sum = 0;
-		for (Employe e : salarieList) {
+		for (Employee e : salarieList) {
 			sum += e.calculSalaire();
 		}
-		for (Vendeur v : salarieList) {
+		for (Vendeur v : vendeurList) {
 			sum += v.calculSalaire();
 		}
 		
 		return sum;
 	
-}
+}}

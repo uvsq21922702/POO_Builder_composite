@@ -1,8 +1,10 @@
-package fr.uvsq.poo.Solid.srp;
+package fr.uvsq.poo.Solid.Srp;
 
-public class Affiche_Coordonnees {
+import fr.uvsq.poo.Solid.Ocp.Employee;
 
-	public void afficheEmploye(Employe e) {
+class Affiche_Coordonnees {
+
+	public void afficheEmploye(Employee e) {
 		System.out.println(e.toString());
 	}
 

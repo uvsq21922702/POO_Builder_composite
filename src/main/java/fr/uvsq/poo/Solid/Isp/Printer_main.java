@@ -1,6 +1,6 @@
-package fr.uvsq.poo.Solid.isp;
+package fr.uvsq.poo.Solid.Isp;
 
-public class Printer_main implements Printer, Copie, Faxe, Scanner {
+public class Printer_main implements fr.uvsq.poo.Solid.isp.Printer, Copie, fr.uvsq.poo.Solid.isp.Faxe, fr.uvsq.poo.Solid.isp.Scanner {
 
 	public void scan() {
 		// TODO Auto-generated method stub
