@@ -1,4 +1,4 @@
-package fr.uvsq.poo.Srp_Ocp
+package fr.uvsq.poo.Srp_Ocp;
 
 import org.junit.Before;
 import org.junit.Test;

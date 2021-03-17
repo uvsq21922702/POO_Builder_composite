@@ -1,4 +1,4 @@
-package fr.uvsq.poo.Lsp
+package fr.uvsq.poo.Lsp;
 
 import org.junit.Before;
 import org.junit.Test;
