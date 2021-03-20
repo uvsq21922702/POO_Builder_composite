@@ -20,11 +20,11 @@ public class Personnel_groupe implements PersonnelInterface {
 
     public List<PersonnelInterface> getAllPersonnel() {
         return personnelInterace;
-        
+
     }
 
     @Override
-    public void Afficher() {
-        System.out.print("Ceci est un groupe de personne");
+    public String Afficher() {
+        return  "Plusieurs personnes";
     }
 }

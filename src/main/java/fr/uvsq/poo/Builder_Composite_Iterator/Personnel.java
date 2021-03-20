@@ -41,8 +41,8 @@ public class Personnel implements  PersonnelInterface {
     }
 
     @Override
-    public void Afficher() {
-        System.out.print("Ceci est une personne");
+    public String Afficher() {
+        return "Une seule personne";
     }
 
 

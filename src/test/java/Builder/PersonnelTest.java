@@ -1,8 +1,9 @@
 package Builder;
 
-import fr.uvsq.poo.Builder.NumeroTelephone;
-import fr.uvsq.poo.Builder.Personnel;
-import  fr.uvsq.poo.Builder.NumeroTelephone;
+import fr.uvsq.poo.Builder_Composite_Iterator.NumeroTelephone;
+import fr.uvsq.poo.Builder_Composite_Iterator.Personnel;
+import  fr.uvsq.poo.Builder_Composite_Iterator.NumeroTelephone;
+import fr.uvsq.poo.Builder_Composite_Iterator.Personnel_groupe;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -54,6 +55,16 @@ public class PersonnelTest {
 		numList.add(new NumeroTelephone("Perso", "0666666666", "0766"));
 		numList.add(new NumeroTelephone("Fax", "0612345678", "0766"));
 		assertEquals(pers.getNumerosTelephone(), numList);
+	}
+
+	@Test()
+	public void testAffichePersonnel() {
+		assertEquals(pers.Afficher(), "Une seule personne");
+	}
+
+	@Test()
+	public void testAfficheGroupe() {
+		assertEquals((new Personnel_groupe()).Afficher(), "Plusieurs personnes");
 	}
 
 }
