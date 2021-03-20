@@ -1,5 +1,6 @@
 package fr.uvsq.poo.Builder_Composite_Iterator;
 
+import java.util.ArrayDeque;
 import java.util.Collection;
 
 public class IteratorGroup extends Iterator_structure{
@@ -9,6 +10,6 @@ public class IteratorGroup extends Iterator_structure{
 
     @Override
     protected PersonnelInterface getCollection() {
-        return null;
+        return ((ArrayDeque<PersonnelInterface>) collection).remove();
     }
 }
