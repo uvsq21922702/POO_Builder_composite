@@ -1,4 +1,4 @@
-package fr.uvsq.poo.Builder;
+package fr.uvsq.poo.Builder_Composite_Iterator;
 
 import java.util.Locale;
 

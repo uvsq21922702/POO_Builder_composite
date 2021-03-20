@@ -1,11 +1,10 @@
-package fr.uvsq.poo.Builder;
+package fr.uvsq.poo.Builder_Composite_Iterator;
 
-import java.time.LocalDateTime;
 import java.time.LocalDate;
 
 import java.util.List;
 
-public class Personnel {
+public class Personnel implements  PersonnelInterface {
 
     private  String nom;
     private String prenom;
@@ -41,7 +40,10 @@ public class Personnel {
         return numerosTelephone;
     }
 
-
+    @Override
+    public void Afficher() {
+        System.out.print("Ceci est une personne");
+    }
 
 
     public static  class Builder {
