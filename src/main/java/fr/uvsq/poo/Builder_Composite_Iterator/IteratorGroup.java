@@ -4,8 +4,9 @@ import java.util.ArrayDeque;
 import java.util.Collection;
 
 public class IteratorGroup extends Iterator_structure{
-    public IteratorGroup(Personnel_groupe personnelGroupe, Collection<PersonnelInterface> collection) {
-        super(personnelGroupe, collection);
+
+    public IteratorGroup(Personnel_groupe personnelGrp) {
+        super(personnelGrp, new ArrayDeque<PersonnelInterface>());
     }
 
     @Override

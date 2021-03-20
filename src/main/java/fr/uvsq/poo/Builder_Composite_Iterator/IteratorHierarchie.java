@@ -4,8 +4,8 @@ import java.util.Collection;
 import java.util.Stack;
 
 public class IteratorHierarchie extends  Iterator_structure{
-    public IteratorHierarchie(Personnel_groupe personnelGroupe, Collection<PersonnelInterface> collection) {
-        super(personnelGroupe, collection);
+    public IteratorHierarchie(Personnel_groupe personnelGrp) {
+        super(personnelGrp, new Stack<PersonnelInterface>());
     }
 
     @Override
