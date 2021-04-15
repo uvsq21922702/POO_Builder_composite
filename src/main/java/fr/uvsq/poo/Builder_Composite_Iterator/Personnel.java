@@ -40,6 +40,10 @@ public class Personnel implements  PersonnelInterface, Serializable  {
         return numerosTelephone;
     }
 
+    void print() {
+        print();
+    }
+
     @Override
     public String Afficher() {
         return "Une seule personne";
