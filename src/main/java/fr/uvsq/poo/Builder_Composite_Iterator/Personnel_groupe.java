@@ -2,8 +2,9 @@ package fr.uvsq.poo.Builder_Composite_Iterator;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.io.Serializable;
 
-public class Personnel_groupe implements PersonnelInterface {
+public class Personnel_groupe implements PersonnelInterface, Serializable {
     private final List<PersonnelInterface> personnelInterace;
 
     public Personnel_groupe() {

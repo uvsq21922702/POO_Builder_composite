@@ -1,10 +1,10 @@
 package fr.uvsq.poo.Builder_Composite_Iterator;
-
+import java.io.Serializable;
 import java.time.LocalDate;
 
 import java.util.List;
 
-public class Personnel implements  PersonnelInterface {
+public class Personnel implements  PersonnelInterface, Serializable  {
 
     private  String nom;
     private String prenom;
