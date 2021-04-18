@@ -1,0 +1,33 @@
+1-SRP
+1/ la class employe ne respecte pas SRP car on trouve deux responsabilités dans la classe.
+
+2/si la methode calcul_salaire change implique directement un changement dans affiche_coordonée().
+
+3/fichier csv ?? c’est un fichier en exel ou les données sont stockés mais ca sert à quoi cette question plus exactement !!
+
+4/La solution.(code source à voir).
+
+2-OCP doit en vrai respecter le polymorphisme.
+*Chaque classe doit avoir une methode pour faire une chose.
+*Les attributs doivent être privés.
+*pas de variables globales.
+*exemple:
+==> une classe shape
+==> une classe cercle à part extend shape et puis la définition des méthodes.
+==> utiliser une méthode computer_area().
+==> et donc le polymorphisme à chaque fois.
+
+1/ sur eclipse//
+
+
+
+3-LSP
+Cette solution ne respecte pas LSP car quand on appelle la méthode avance sur tous les types de Robots, on ne peut pas substituer un Robot par un RobotStatique car celui-ci renvoie une UnsupportedOperationException.
+
+4-ISP
+*Cette solution ne respecte pas ISP car les composants de ces interfaces ne sont pas décomposé en des petits modules.
+Donc la solution est de décomposer cette interface en des petits isp simples.
+
+*Cela forcera à modifier la signature dans SimplePrinter alors qu'il ne l'implémente même pas.
+
+5-Cette classe ne respecte pas DIP car elle ne dépend d'un affichage (Sys.out.print) alors qu'on se trouve dans un haut niveau d'abstraction. On doit remplacer le Sys.out.print par une méthode généraliste de Logger.
