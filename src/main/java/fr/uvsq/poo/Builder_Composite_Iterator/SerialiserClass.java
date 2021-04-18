@@ -12,7 +12,11 @@ import java.io.ObjectOutputStream;
 import java.io.Serializable;
 
 public abstract  class SerialiserClass <T extends Serializable>{
-
+    
+    private boolean exists(String filename) {
+        File file = new File(filename);
+        return file.exists();
+    }
 
     public T writeFile(T obj, String filename, InterfaceLog log) {
         try (ObjectOutputStream out = new ObjectOutputStream(

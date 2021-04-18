@@ -12,7 +12,7 @@ public class Personnel implements  PersonnelInterface, Serializable  {
     private LocalDate date;
     private List<NumeroTelephone> numerosTelephone;
 
-    private Personnel(Builder builder) {
+    Personnel(Builder builder) {
         nom = builder.nom;
         prenom = builder.prenom;
         fonction = builder.fonction;
@@ -77,6 +77,10 @@ public class Personnel implements  PersonnelInterface, Serializable  {
         }
 
 
+    }
+    @Override
+    public String toString() {
+        return String.format(nom);
     }
 
 }
