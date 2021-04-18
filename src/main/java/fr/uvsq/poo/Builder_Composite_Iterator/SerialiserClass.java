@@ -12,7 +12,7 @@ import java.io.ObjectOutputStream;
 import java.io.Serializable;
 
 public abstract  class SerialiserClass <T extends Serializable>{
-    
+
     private boolean exists(String filename) {
         File file = new File(filename);
         return file.exists();
